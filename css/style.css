@@ -601,7 +601,11 @@ pre code {
 }
 } */
 
-@media(min-width:576px) {
+iframe#gmap_canvas {
+    width: 127%;
+}
+
+@media(max-width:576px) {
 	.mapouter {
 		max-width: 100%;
 	}
@@ -613,7 +617,7 @@ pre code {
 	}
 }
 
-@media(min-width:992px) {
+@media(max-width:992px) {
 	.mapouter {
 		max-width: 960px
 	}
