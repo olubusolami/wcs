@@ -95,7 +95,8 @@ h6 {
 
 p {
 	margin-top: 0;
-	margin-bottom: 1rem
+	margin-bottom: 1rem;
+	color: black;
 }
 
 abbr[title],
@@ -568,6 +569,62 @@ pre code {
 	overflow-y: scroll
 }
 
+.mapouter {
+	position:relative;
+	text-align:right;
+	height:500px;
+	/* width:600px; */
+}
+/* 
+#gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:500px;
+	width:600px;
+}
+
+@media(min-width:576px) {
+	#gmap_canvas{
+		max-width: 100%;
+	}
+}
+
+@media(min-width:768px) {
+#gmap_canvas{
+	max-width: 100%;
+}
+}
+
+@media(min-width:992px) {
+#gmap_canvas{
+	max-width: 100%;
+}
+} */
+
+@media(min-width:576px) {
+	.mapouter {
+		max-width: 100%;
+	}
+}
+
+@media(min-width:768px) {
+	.mapouter {
+		max-width: 720px
+	}
+}
+
+@media(min-width:992px) {
+	.mapouter {
+		max-width: 960px
+	}
+}
+
+@media(min-width:1200px) {
+	.mapouter {
+		max-width: 1140px
+	}
+}
+
 .container {
 	width: 100%;
 	padding-right: 15px;
@@ -578,7 +635,7 @@ pre code {
 
 @media(min-width:576px) {
 	.container {
-		max-width: 540px
+		max-width: 100%
 	}
 }
 
@@ -4622,7 +4679,8 @@ input[type=button].btn-block {
 .nav-tabs .dropdown-menu {
 	margin-top: -1px;
 	border-top-left-radius: 0;
-	border-top-right-radius: 0
+	border-top-right-radius: 0;
+	background-color:blue;
 }
 
 .nav-pills .nav-link {
@@ -10788,7 +10846,7 @@ h5,
 
 @media(max-width:991.98px) {
 	.ftco-navbar-light {
-		background: #000!important;
+		background: grey!important;
 		position: relative;
 		top: 0;
 		padding: 10px 15px
@@ -12542,7 +12600,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
 	opacity: 0;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 	-webkit-transition: all .3s ease-out;
 	-moz-transition: all .3s ease-out;
 	-o-transition: all .3s ease-out;
